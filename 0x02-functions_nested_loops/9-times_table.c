@@ -2,26 +2,27 @@
 #include <stdio.h>
 /**
  * times_table - Beginning of function
- * @y: rows
- * @x: columns
+ * row: Define rows
+ * column: Define columns
  * Return: Always void
  */
+
 void times_table(void)
 {
-	int y, x;
+	int row, column;
 
-	for (y = 0 ; y < 10 ; ++y)
+	for (row = 0 ; row < 10 ; ++row)
 	{
-		for (x = 0 ; x < 10 ; ++x)
+		for (column = 0 ; column < 10 ; ++column)
 		{
-			int result = x * y;
+			int result = column * row;
 
-			if (x == 0)
+			if (column == 0)
 				printf("%d, ", result);
 			else
 			{
 				printf("%2d", result);
-				if (x != 9)
+				if (column != 9)
 					printf(", ");
 			}
 		}
