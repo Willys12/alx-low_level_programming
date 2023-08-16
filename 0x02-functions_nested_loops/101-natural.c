@@ -15,4 +15,5 @@ int main(void)
 			sum = sum + j;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
