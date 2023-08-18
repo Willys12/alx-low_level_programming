@@ -1,13 +1,12 @@
 #include "main.h"
 /**
  * print_diagonal - Entry point
- * @n: Character to show lines printed
+ * @n: Number of times lines are  printed
  * Return: void
  */
 void print_diagonal(int n)
 {
-	int i;
-	int j;
+	int i, j;
 
 	if (n <= 0)
 	{
