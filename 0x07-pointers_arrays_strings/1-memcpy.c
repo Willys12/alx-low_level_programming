@@ -1,6 +1,6 @@
 #include "main.h"
  /**
-  * _memcpy - Main function begins here
+  * *_memcpy - Function begins here
   * @n: This is the number of bytes
   * @dest: Pointer to the destination
   * @src: Pointer to source
