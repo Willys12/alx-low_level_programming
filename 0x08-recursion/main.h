@@ -1,6 +1,7 @@
 #ifndef my_header_file
 #define my_header_file
 #include <stdio.h>
+#include <math.h>
 #include <unistd.h>
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
