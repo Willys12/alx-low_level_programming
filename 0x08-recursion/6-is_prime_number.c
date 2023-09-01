@@ -1,32 +1,34 @@
 #include "main.h"
 /**
- * is_prime_number - This function should print 1 or 0
- * @n: The working parameter
- * Return: Should be an integer
+ * is_divisible - This is a helper function
+ * @n:Checks for divisibility
+ * @d: This is the divisor
+ * @c: The value being checked
+ * Return: An integer 1 or 0
  */
-int is_prime_number(int n)
+int is_divisible(int n, int d, int c)
 {
-	int i, sqrt_n;
-
-	if (n <= 1)
-	{
-		return (0);
-	}
-	if (n == 2 || n == 3)
+	if (c * c > n)
 	{
 		return (1);
 	}
-	sqrt_n = 1;
-	for (i = 2; sqrt_n <= n / i ; ++i)
+	if (n % c == 0)
 	{
-		sqrt_n = i;
+		return (0);
 	}
-	for (i = 2 ; i <= sqrt_n ; ++i)
+	return (is_divisible(n, d, c + 1));
+}
+
+/**
+ * is_prime_number - My function starts here
+ * @n: This my working parameter
+ * Return: An integer
+ */
+int is_prime_number(int n)
+{
+	if (n < 2)
 	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
+		return (0);
 	}
-	return (1);
+	return (is_divisible(n, n, 2));
 }
