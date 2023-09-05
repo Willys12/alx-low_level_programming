@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - Function that adds two numbers
+ *main - Function that adds two positive numbers
  *@argc: Argument count
  *@argv: Argument vector
  *Return: Integer
