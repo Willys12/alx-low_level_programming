@@ -4,7 +4,7 @@
  *@str: The input string
  *Return: If the str is NULL return NULL
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	size_t len;
 	char *duplicate;
@@ -14,7 +14,7 @@ char *_strdup(char *str);
 		return (NULL);
 	}
 	len = strlen(str);
-	*duplicate = (char *)malloc((len + 1) * sizeof(char));
+	duplicate = (char *)malloc((len + 1) * sizeof(char));
 	if (duplicate == NULL)
 	{
 		return (NULL);
