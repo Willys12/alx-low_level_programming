@@ -4,11 +4,11 @@
  * @str: This is the string to be printed
  * Return: Always void
  */
-void _puts(char *str)
+void _puts(char *s)
 {
-	int n;
-
-	for (n = 0 ; str[n] != '\0' ; ++n)
-		_putchar(str[n]);
-	_putchar('\n');
+	while (*s != '\0')
+	{
+		_putchar(*s);
+		s++;
+	}
 }
