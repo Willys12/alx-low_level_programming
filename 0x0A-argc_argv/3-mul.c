@@ -6,25 +6,20 @@
 *@argv: Argument vector
 *Return: Integer
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int i, sum = 0, num;	
+	int num1, num2, result;
 
-	if (argc == 1)
+	if (argc != 3)
 	{
-		printf("0\n");
-		return (0);
+		fprintf(stderr, "Error\n");
+		return (1);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		num = atoi(argv[i]);
-		if (num <= 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum = sum + num;
-	}
-	printf("%d\n", sum);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+
+	result = (num1) * (num2);
+
+	printf("%d\n", result);
 	return (0);
 }
