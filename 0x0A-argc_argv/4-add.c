@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main - This function multiplies two numbers
-*@argc: Argument count
-*@argv: Argument vector
+*main - This function adds two numbers.
+*@argc: Count of command line arguments.
+*@argv: Array of command line arguments.
 *Return: Integer
 */
 int main(int argc, char *argv[])
