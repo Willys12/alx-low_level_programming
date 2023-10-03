@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
 /**
 *main - This function adds two numbers.
 *@argc: Count of command line arguments.
@@ -10,6 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i, num;
 	long sum = 0;
+	char *endptr;
 
 	if (argc == 1)
 	{
@@ -18,7 +20,12 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[i]);
+		num = strtol(argv[i], &endptr, 10);
+		if (*endptr != '\0' || errno == ERANGE)
+		{
+			printf("Error\n");
+			return (1);
+		}
 		if (num < 0)
 		{
 			printf("Error\n");
