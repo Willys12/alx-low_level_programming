@@ -6,17 +6,17 @@
 */
 char *_strdup(char *str)
 {
-char *duplicate;
+	char *duplicate;
 
-if (str == NULL)
-{
-return (NULL);
-}
-duplicate = malloc((strlen(str) + 1) * sizeof(char));
-if (duplicate == NULL)
-{
-return (NULL);
-}
-strcpy(duplicate, str);
-return (duplicate);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	duplicate = malloc((strlen(str) + 1) * sizeof(char));
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
+	strcpy(duplicate, str);
+	return (duplicate);
 }
