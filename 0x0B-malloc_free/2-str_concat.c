@@ -10,8 +10,6 @@ char *str_concat(char *s1, char *s2)
 	unsigned int len1, len2;
 	char *concatenate;
 
-	len1 = strlen(s1);
-	len2 = strlen(s2);
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -20,6 +18,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	len1 = strlen(s1);
+	len2 = strlen(s2);
 	concatenate = malloc(((len1 + len2) + 1) * sizeof(char));
 	if (concatenate == NULL)
 	{
