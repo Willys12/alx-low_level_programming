@@ -43,7 +43,7 @@ concat_str[i] = s1[i];
 }
 for (i = 0; i < len_2 && i < n; i++)
 {
-concat_str[len_1 + 1] = s2[i];
+concat_str[len_1 + i] = s2[i];
 }
 concat_str[entire_len] = '\0';
 
