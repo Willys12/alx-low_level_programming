@@ -24,7 +24,7 @@ s2 = "";
 }
 len_1 = strlen(s1);
 len_2 = strlen(s2);
-concat_str = malloc(n * sizeof(char));
+concat_str = malloc((len_1 + n + 1) * sizeof(char));
 if (concat_str == NULL)
 {
 return (NULL);
