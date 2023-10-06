@@ -32,7 +32,7 @@ return (NULL);
 }
 new_block = ptr_2;
 old_block = ptr;
-dup_size = new_size;
+dup_size = old_size < new_size ? old_size : new_size;
 for (i = 0; i < dup_size; i++)
 {
 new_block[i] = old_block[i];
