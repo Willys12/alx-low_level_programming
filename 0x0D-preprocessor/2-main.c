@@ -1,6 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <stdio.h>
+#define FILE_NAME "2-main.c"
 int _putchar(char c);
 /**
 *main - prints the name of the file it was compiled from.
@@ -8,12 +9,11 @@ int _putchar(char c);
 */
 int main(void)
 {
-char *s = __FILE__;
 int j = 0;
 
-while (s[j] != '\0')
+while (FILE_NAME[j] != '\0')
 {
-_putchar(s[j]);
+_putchar(FILE_NAME[j]);
 ++j;
 }
 _putchar('\n');
