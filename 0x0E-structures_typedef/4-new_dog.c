@@ -20,9 +20,9 @@ return (NULL);
 (*new_dog).owner = malloc(strlen(owner) + 1);
 if ((*new_dog).name == NULL || (*new_dog).owner == NULL)
 {
-free((*new_dog).name);
-free((*new_dog).owner);
-free(new_dog);
+free(new_dog->name);
+free(new_dog->owner);
+free(new_dog + 1);
 return (NULL);
 }
 strcpy((*new_dog).name, name);
