@@ -22,7 +22,7 @@ if ((*new_dog).name == NULL || (*new_dog).owner == NULL)
 {
 free(new_dog->name);
 free(new_dog->owner);
-free(new_dog + 1);
+free(new_dog);
 return (NULL);
 }
 strcpy((*new_dog).name, name);
