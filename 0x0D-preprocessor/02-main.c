@@ -1,30 +1,10 @@
-#include "main.h"
-#include <unistd.h>
 #include <stdio.h>
-#define FILE_NAME "2-main.c"
-int _putchar(char c);
 /**
-*main - prints the name of the file it was compiled from.
-*Return: 0 on success.
+*main - Print the program name.
+*Return: Integer.
 */
 int main(void)
 {
-int j = 0;
-
-while (FILE_NAME[j] != '\0')
-{
-_putchar(FILE_NAME[j]);
-++j;
-}
-_putchar('\n');
+printf("%s\n", __FILE__);
 return (0);
-}
-/**
-*_putchar - Helper function.
-*@c: Character to be printed.
-*Return: integer.
-*/
-int _putchar(char c)
-{
-return (putchar(c));
 }
