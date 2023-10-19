@@ -6,9 +6,9 @@
 */
 size_t print_list(const list_t *h)
 {
-size_t nodes = 0;
+size_t nodes;
 
-	for (; h; h = (*h).next, nodes++)
+	for (nodes = 0; h; h = (*h).next, nodes++)
 	{
 		if ((*h).str)
 		{
