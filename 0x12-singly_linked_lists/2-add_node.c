@@ -25,5 +25,5 @@ return (NULL);
 (*node1).next = *head;
 *head = node1;
 
-return node1;
+return (node1);
 }
