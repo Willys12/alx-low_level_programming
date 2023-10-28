@@ -15,8 +15,6 @@ return (-1);
 }
 
 mask = 1UL << index;
-
-n* = *n & ~mask;
-
+*n = *n & ~mask;
 return (1);
 }
