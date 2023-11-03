@@ -20,7 +20,7 @@ if (j == -1)
 {
 return (-1);
 }
-if (fchmod(j, S_IRUSR | S_IWUSR))
+if (fchmod(j, S_IRUSR | S_IWUSR) == -1)
 {
 close(j);
 return (-1);
@@ -37,5 +37,5 @@ return (-1);
 }
 close(j);
 
-return (-1);
+return (1);
 }
