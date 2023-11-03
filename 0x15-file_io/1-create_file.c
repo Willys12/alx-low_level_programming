@@ -15,7 +15,8 @@ if (!filename)
 {
 return (-1);
 }
-j = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+j = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR |
+	 S_IWUSR | S_IRGRP | S_IROTH);
 if (j == -1)
 {
 return (-1);
