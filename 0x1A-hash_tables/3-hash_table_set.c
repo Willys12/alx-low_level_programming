@@ -47,6 +47,5 @@ return (0);
 }
 (*new_node).next = (*ht).array[index];
 (*ht).array[index] = new_node;
-
 return (1);
 }
